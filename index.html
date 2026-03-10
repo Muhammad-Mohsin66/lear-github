@@ -1,1 +1,74 @@
-alsjhgdf
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTTrack — Website Copier</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header>
+    <h1>HTTrack</h1>
+    <p class="tagline">A free, open-source offline website copier</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>What is HTTrack?</h2>
+      <p>
+        HTTrack is a free, open-source offline browser utility that lets you download an entire
+        website from the Internet to a local directory. It recursively builds all directories,
+        fetching HTML pages, images, and other files so you can browse the site offline exactly
+        as it appears online.
+      </p>
+    </section>
+
+    <section>
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>Offline browsing</strong> — Download a full website for local access.</li>
+        <li><strong>Recursive downloading</strong> — Follows links and rebuilds the directory structure locally.</li>
+        <li><strong>Resume support</strong> — Resume interrupted downloads and update existing mirrors.</li>
+        <li><strong>Filter rules</strong> — Include or exclude files by type, size, domain, or path.</li>
+        <li><strong>Multi-platform</strong> — Runs on Windows, Linux, macOS, and other Unix systems.</li>
+        <li><strong>Open source</strong> — Released under the GNU General Public License (GPL).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How It Works</h2>
+      <ol>
+        <li>HTTrack connects to the specified URL.</li>
+        <li>It parses each HTML page for links to other resources.</li>
+        <li>All linked pages, images, CSS, JS, and other assets are downloaded.</li>
+        <li>Internal links are rewritten to point to the local copies.</li>
+        <li>The result is a fully navigable, self-contained copy on your disk.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Basic Usage</h2>
+      <pre><code># Install on Debian/Ubuntu
+sudo apt-get install httrack
+
+# Mirror a website
+httrack "https://example.com" -O "/path/to/output"
+
+# Mirror with a depth limit (3 levels)
+httrack "https://example.com" -O "/path/to/output" -r3</code></pre>
+    </section>
+
+    <section>
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://www.httrack.com" target="_blank" rel="noopener noreferrer">Official Website</a></li>
+        <li><a href="https://github.com/xroche/httrack" target="_blank" rel="noopener noreferrer">Source Code on GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>HTTrack is maintained by Xavier Roche and released under the GPL.</p>
+  </footer>
+</body>
+</html>
